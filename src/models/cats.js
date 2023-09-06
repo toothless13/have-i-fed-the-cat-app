@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize");
+
 module.exports = (sequelize, DataTypes) => {
   const schema = {
     name: DataTypes.STRING,
@@ -6,5 +8,5 @@ module.exports = (sequelize, DataTypes) => {
     lastFed: DataTypes.DATE
   }
 
-  return sequelize.define('Cat', schema);
+  return sequelize.define('Cat', schema)
 }

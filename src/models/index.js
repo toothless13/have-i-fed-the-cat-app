@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
-const CatModel = ('./cats');
+const CatModel = require('./cats');
 
 const setUpDatabase = () => {
   const connection = new Sequelize('have_i_fed_the_cat_app', 'postgres', 'password', {
     host: 'localhost',
-    port: 5433,
+    port: 5432,
     dialect: 'postgres',
     logging: false
   });
